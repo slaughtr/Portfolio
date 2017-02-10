@@ -1,7 +1,9 @@
 * {
-  border: 1px solid cyan;
+  /*border: 1px solid cyan;*/
   font-family: OstrichSansRounded-Medium;
   font-size: 30px;
+  color: black;
+  background-color: #eeeeee;
 }
 
 
@@ -99,7 +101,7 @@ h1 {
 }
 
 .popover-title, .popover-content {
-  color: red;
+  color: magenta;
   font-family: OstrichSansRounded-Medium;
   font-size: 19px;
 }
@@ -109,7 +111,38 @@ h1 {
   max-width: 200px;
 }
 
+.olfloat {
+  float: left;
+}
 
+ol { /* remove the numbers from the ol so I can use padding for effect. sorry :/ */
+  list-style: none;
+}
+
+#listudy {
+  padding-left: 25px;
+}
+
+#ligrad {
+  padding-left: 50px;
+}
+
+#liidk {
+  padding-left: 75px;
+  color: #7c7c7c;
+}
+
+#liprofit {
+  padding-left: 100px;
+}
+
+.beautifulpuppies { /* gradient for beautiful puppies! */
+  font-family: OstrichSansInline-Italic;
+  font-size: 40px;
+  background: -webkit-linear-gradient( #ff948e, #ffcc8d, #f9ff91, #97ff9e, #abbeff );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 
 /* load fonts */
