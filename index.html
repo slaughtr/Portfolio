@@ -39,7 +39,7 @@
         </div> <!-- END background column -->
       </div> <!-- END top row -->
 
-      <div class="row buttons"> <!--let's hope this BEGINS our popup row #1 -->
+      <div class="row buttons"> <!-- BEGIN popover and tooltip row-->
         <div class="col-md-1"> <!-- column start -->
           <div data-toggle="tooltip" id="myProject">Hello, world.</div>
         </div> <!-- column end -->
@@ -76,12 +76,7 @@
         <div class="col-md-1"> <!-- column start -->
           <div data-toggle="tooltip" id="myProject12">Wikipedia clone.</div>
         </div> <!-- column end -->
-    </div> <!-- END popup row 1 -->
-
-      <div class="row"> <!--let's hope this BEGINS our popup row #2 -->
-
-      </div>
-
+      </div> <!-- END popover and tiiktuo row -->
       <div class="row"> <!-- BEGIN bottom row -->
           <div class="col-md-4 align-self-start dynfontsizeb-1" id="leftcoloffset">
             <h3>Interests:</h3>
@@ -115,125 +110,151 @@
 
     <!-- script needed for bootstrap popovers and tooltips -->
     <script>
-    $("#myProject").tooltip ({
-      trigger:'hover',
-    html:true,
-    title:"<img src='img/hello-world.png'/>"})
-    .popover ({trigger:'click',
-    html:true,
-    container: 'body',
-    placement:'bottom',
-    content:"<a href='https://github.com/slaughtr/hello-world'>Hello World</a><small>&nbsp;&nbsp;&nbsp;link to github</small><br>Our first project, a simple hello world HTML file."});
-
-    $("#myProject2").tooltip ({
-      trigger:'hover',
-    html:true,
-    title:"<img src='img/cookie-recipe.png'/>"})
-    .popover ({trigger:'click',
-    html:true,
-    container: 'body',
-    placement:'bottom',
-    content:"<a href='https://github.com/slaughtr/cookie-recipe'>Cookie Recipe</a><small>&nbsp;&nbsp;&nbsp;link to github</small><br>An exercise in block elements and inline elements in HTML."});
-
-    $("#myProject3").tooltip ({
-      trigger:'hover',
-    html:true,
-    title:"<img src='img/pets.png'/>"})
-    .popover ({trigger:'click',
-    html:true,
-    container: 'body',
-    placement:'bottom',
-    content:"<a href='https://github.com/slaughtr/pets'>Google</a>"});
-
-    $("#myProject4").tooltip ({
-      trigger:'hover',
-    html:true,
-    title:"<img src='img/resort-website.png'/>"})
-    .popover ({trigger:'click',
-    html:true,
-    container: 'body',
-    placement:'bottom',
-    content:"<a href='https://github.com/slaughtr/resort-website'>Google</a>"});
-
-    $("#myProject5").tooltip ({
-      trigger:'hover',
-    html:true,
-    title:"<img src='img/cupcake-shop.png'/>"})
-    .popover ({trigger:'click',
-    html:true,
-    container: 'body',
-    placement:'bottom',
-    content:"<a href='https://github.com/slaughtr/cupcake-shop'>Google</a>"});
-
-    $("#myProject6").tooltip ({
-      trigger:'hover',
-    html:true,
-    title:"<img src='img/resume-website.png'/>"})
-    .popover ({trigger:'click',
-    html:true,
-    container: 'body',
-    placement:'bottom',
-    content:"<a href='https://github.com/slaughtr/resume-website'>Google</a>"});
-
-    $("#myProject7").tooltip ({
-      trigger:'hover',
-    html:true,
-    title:"<img src='img/favorite-band.png'/>"})
-    .popover ({trigger:'click',
-    html:true,
-    container: 'body',
-    placement:'bottom',
-    content:"<a href='https://github.com/slaughtr/favorite-band'>Google</a>"});
-
-    $("#myProject8").tooltip ({
-      trigger:'hover',
-    html:true,
-    title:"<img src='img/boring-lecture.png'/>"})
-    .popover ({trigger:'click',
-    html:true,
-    container: 'body',
-    placement:'bottom',
-    content:"<a href='https://github.com/slaughtr/boring-lecture'>Google</a>"});
-
-    $("#myProject9").tooltip ({
-      trigger:'hover',
-    html:true,
-    title:"<img src='img/balls-blog.png'/>"})
-    .popover ({trigger:'click',
-    html:true,
-    container: 'body',
-    placement:'bottom',
-    content:"<a href='https://github.com/slaughtr/balls-blog'>Google</a>"});
-
-    $("#myProject10").tooltip ({
-      trigger:'hover',
-    html:true,
-    title:"<img src='img/vacation-website.png'/>"})
-    .popover ({trigger:'click',
-    html:true,
-    container: 'body',
-    placement:'bottom',
-    content:"<a href='https://github.com/slaughtr/vacation-website'>Google</a>"});
-
-    $("#myProject11").tooltip ({
-      trigger:'hover',
-    html:true,
-    title:"<img src='img/week-in-review.png'/>"})
-    .popover ({trigger:'click',
-    html:true,
-    container: 'body',
-    placement:'bottom',
-    content:"<a href='https://github.com/slaughtr/week-in-review'>Google</a>"});
-
-    $("#myProject12").tooltip ({
-      trigger:'hover',
-    html:true,
-    title:"<img src='img/wiki-clone.png'/>"})
-    .popover ({trigger:'click',
-    html:true,
-    container: 'body',
-    placement:'bottom',
-    content:"<a href='https://github.com/slaughtr/wiki-clone'>Google</a>"});
+      $("#myProject").tooltip ({
+        trigger:'hover',
+        html:true,
+        title:"<img src='img/hello-world.png'/>"
+      })
+      .popover ({
+        trigger:'click',
+        html:true,
+        dismiss: 'focus',
+        container: 'body',
+        placement:'bottom',
+        content:"<a href='https://github.com/slaughtr/hello-world'>Hello World</a><small>&nbsp;&nbsp;&nbsp;link to github</small><br>Our first project, a simple hello world HTML file."
+      });
+      $("#myProject2").tooltip ({
+        trigger:'hover',
+        html:true,
+        title:"<img src='img/cookie-recipe.png'/>"
+      })
+      .popover ({
+        trigger:'click',
+        html:true,
+        container: 'body',
+        placement:'bottom',
+        content:"<a href='https://github.com/slaughtr/cookie-recipe'>Cookie Recipe</a><small>&nbsp;&nbsp;&nbsp;link to github</small><br>An exercise in block elements and inline elements in HTML."
+      });
+      $("#myProject3").tooltip ({
+        trigger:'hover',
+        html:true,
+        title:"<img src='img/pets.png'/>"
+      })
+      .popover ({
+        trigger:'click',
+        html:true,
+        container: 'body',
+        placement:'bottom',
+        content:"<a href='https://github.com/slaughtr/pets'>Google</a><small>&nbsp;&nbsp;&nbsp;link to github</small><br>More practice in block elements and inline elements in HTML."
+      });
+      $("#myProject4").tooltip ({
+        trigger:'hover',
+        html:true,
+        title:"<img src='img/resort-website.png'/>"
+      })
+      .popover ({
+        trigger:'click',
+        html:true,
+        container: 'body',
+        placement:'bottom',
+        content:"<a href='https://github.com/slaughtr/resort-website'>Google</a><small>&nbsp;&nbsp;&nbsp;link to github</small><br>An exercise in CSS and using and index.html file."
+      });
+      $("#myProject5").tooltip ({
+        trigger:'hover',
+        html:true,
+        title:"<img src='img/cupcake-shop.png'/>"
+      })
+      .popover ({
+        trigger:'click',
+        html:true,
+        container: 'body',
+        placement:'bottom',
+        content:"<a href='https://github.com/slaughtr/cupcake-shop'>Google</a><small>&nbsp;&nbsp;&nbsp;link to github</small><br>More practice with CSS, using img and anchor tags."
+      });
+      $("#myProject6").tooltip ({
+        trigger:'hover',
+        html:true,
+        title:"<img src='img/resume-website.png'/>"
+      })
+      .popover ({
+        trigger:'click',
+        html:true,
+        container: 'body',
+        placement:'bottom',
+        content:"<a href='https://github.com/slaughtr/resume-website'>Google</a><small>&nbsp;&nbsp;&nbsp;link to github</small><br>Learning floats in CSS."
+      });
+      $("#myProject7").tooltip ({
+        trigger:'hover',
+        html:true,
+        title:"<img src='img/favorite-band.png'/>"
+      })
+      .popover ({
+        trigger:'click',
+        html:true,
+        container: 'body',
+        placement:'bottom',
+        content:"<a href='https://github.com/slaughtr/favorite-band'>Google</a><small>&nbsp;&nbsp;&nbsp;link to github</small><br>More floats and CSS classes."
+      });
+      $("#myProject8").tooltip ({
+        trigger:'hover',
+        html:true,
+        title:"<img src='img/boring-lecture.png'/>"
+      })
+      .popover ({
+        trigger:'click',
+        html:true,
+        container: 'body',
+        placement:'bottom',
+        content:"<a href='https://github.com/slaughtr/boring-lecture'>Google</a><small>&nbsp;&nbsp;&nbsp;link to github</small><br>Even more floats and classes practice!"
+      });
+      $("#myProject9").tooltip ({
+        trigger:'hover',
+        html:true,
+        title:"<img src='img/balls-blog.png'/>"
+      })
+      .popover ({
+        trigger:'click',
+        html:true,
+        container: 'body',
+        placement:'bottom',
+        content:"<a href='https://github.com/slaughtr/balls-blog'>Google</a><small>&nbsp;&nbsp;&nbsp;link to github</small><br>Float those classes!"
+      });
+      $("#myProject10").tooltip ({
+        trigger:'hover',
+        html:true,
+        title:"<img src='img/vacation-website.png'/>"
+      })
+      .popover ({
+        trigger:'click',
+        html:true,
+        container: 'body',
+        placement:'bottom',
+        content:"<a href='https://github.com/slaughtr/vacation-website'>Google</a><small>&nbsp;&nbsp;&nbsp;link to github</small><br>Let's learn how to use bootstrap!"
+      });
+      $("#myProject11").tooltip ({
+        trigger:'hover',
+        html:true,
+        title:"<img src='img/week-in-review.png'/>"
+      })
+      .popover ({
+        trigger:'click',
+        html:true,
+        container: 'body',
+        placement:'bottom',
+        content:"<a href='https://github.com/slaughtr/week-in-review'>Google</a><small>&nbsp;&nbsp;&nbsp;link to github</small><br>Bootstrap practice, and what we learned this week."
+      });
+      $("#myProject12").tooltip ({
+        trigger:'hover',
+        html:true,
+        title:"<img src='img/wiki-clone.png'/>"
+      })
+      .popover ({
+        trigger:'click',
+        html:true,
+        container: 'body',
+        placement:'bottom',
+        content:"<a href='https://github.com/slaughtr/wiki-clone'>Google</a><small>&nbsp;&nbsp;&nbsp;link to github</small><br>Using bootstrap to clone the Wikipedia landing page. This was tough!"
+      });
     </script>
   </body>
 </html>

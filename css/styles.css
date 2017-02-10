@@ -4,18 +4,19 @@
   font-size: 30px;
 }
 
+
+
 .imgfloatleft { /* let's make that image work! */
   float: left;
   width: 21vw;
   padding-right: 29px;
   margin-left: -15px;
-  /*box-shadow: -5px -5px 4px magenta;*/
   border-radius: 11px 42px;
 }
 
 /* font size changes with viewport! */
 .dynfontsize1 p, li, a {
-  font-size: 2vmax;
+  font-size: 2vmin;
 }
 
 .dynfontsize2 p, li {
