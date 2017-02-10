@@ -3,6 +3,8 @@
   <head>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- need this for my bootstrap popovers -->
+    <script src="js/bootstrap.js"></script> <!-- need this for bootstrap popovers as well -->
     <title>Dallas's Programming Portfolio</title>
   </head>
   <body>
@@ -37,8 +39,8 @@
         </div> <!-- END background column -->
       </div> <!-- END top row -->
 
-      <div class="row"> <!--let's hope this BEGINS our popup row #1 -->
-
+      <div class="row buttons"> <!--let's hope this BEGINS our popup row #1 -->
+      <a data-toggle="tooltip" title="<img src='img/meandbuzz.jpg'/>"><a rel="popover" data-img="http://www.asdf.com/89asdf.gif">FUCK</a></a>
       </div>
 
       <div class="row"> <!--let's hope this BEGINS our popup row #2 -->
@@ -75,5 +77,21 @@
       </div> <!--END bottom row -->
 
     </div> <!-- END container -->
+
+    <!-- script needed for bootstrap popovers -->
+    <script>
+      $('a[rel=popover]').popover({
+        html: true,
+        content: function(){return '<img src="'+$(this).data('img') + '" />';}
+      });
+      $('a[data-toggle="tooltip"]').tooltip({
+        animated: 'fade',
+        placement: 'right',
+        html: true,
+        container: 'body',
+        delay: { "show": 10, "hide": 600 },
+
+      });
+    </script>
   </body>
 </html>

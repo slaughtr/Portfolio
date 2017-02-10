@@ -95,7 +95,9 @@ h1 {
 
 
 
-
+.buttons img {
+  max-width: 200px;
+}
 
 
 
