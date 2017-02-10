@@ -12,6 +12,13 @@
   margin-left: -15px;
   border-radius: 11px 42px;
 }
+.h2narrower {
+  width: 300px;
+}
+.aboutme {
+  border-radius: 7px 50px 14px 25px;
+  border: 2px black solid;
+}
 /* font size changes with viewport! */
 .dynfontsize1 p, li, a {
   font-size: 2vmin;
@@ -82,6 +89,17 @@ h1 {
   color: magenta;
   font-family: OstrichSansRounded-Medium;
   font-size: 19px;
+}
+.oddprojects {
+  border-radius: 5px 20px 5px;
+  background: #dddddd;
+  padding-left: 8px;
+}
+.evenprojects {
+  border-radius: 20px 5px 20px;
+  background: #000000;
+  padding-left: 8px;
+  color: #fdfdfd;
 }
 .buttons img { /* makes sure my tooltip images aren't huge */
   max-width: 333px;
