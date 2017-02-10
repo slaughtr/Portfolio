@@ -93,6 +93,15 @@ h1 {
  font-size: 48px;
 }
 
+.popover {
+  max-width: 100%;
+}
+
+.popover-title, .popover-content {
+  color: red;
+  font-family: OstrichSansRounded-Medium;
+  font-size: 19px;
+}
 
 
 .buttons img {
