@@ -5,9 +5,6 @@
   color: black;
   background-color: #eeeeee;
 }
-
-
-
 .imgfloatleft { /* let's make that image work! */
   float: left;
   width: 21vw;
@@ -15,63 +12,49 @@
   margin-left: -15px;
   border-radius: 11px 42px;
 }
-
 /* font size changes with viewport! */
 .dynfontsize1 p, li, a {
   font-size: 2vmin;
 }
-
 .dynfontsize2 p, li {
   font-size: 2.5vmin;
 }
-
 .dynfontsizeb-1 p, li {
   font-size: 4vmin;
 }
-
 .dynfontsizeb-2 p, li {
   font-size: 1.5vmin;
 }
-
 .dynfontsizeb-3 p, li {
   font-size: 2vmin;
 }
-
 .align {
   font-size: 2vmin;
 }
-
 /* offset bottom row */
 #leftcoloffset {
   margin-top: 10px;
 }
 #middlecoloffset {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 #rightcoloffset {
-  margin-top: 30px;
+  margin-top: 100px;
 }
-
-
-
-#proghover:hover { /*on hover over "programming" */
+#proghover:hover { /*on hover over "programming", enlarge*/
   font-size: 77px;
   font-family: OstrichSansInline-Regular
 }
-
-/* digital watches changes to frood */
+/* digital watches changes to frood on hover*/
 span.after-frood {
   display: none;
 }
-
 .hoopy:hover span.align {
   display: none;
 }
-
 .hoopy:hover span.after-frood {
   display: block;
 }
-
 /* h1 w/ diff fonts for name */
 h1 {
   text-align: justify;
@@ -80,62 +63,46 @@ h1 {
   font-family: OstrichSans-Heavy;
   font-size: 72px;
 }
-
 #name2 {
   font-family: OstrichSansDashed-Medium;
   font-size: 32px;
 }
-
 #name3 {
   font-family: OstrichSans-Light;
   font-size: 66px
 }
-
 #name4 {
  font-family: OstrichSansInline-Italic;
  font-size: 48px;
 }
-
-.popover {
+.popover { /* allow popovers to be wider than their source button */
   max-width: 100%;
 }
-
-.popover-title, .popover-content {
+.popover-title, .popover-content { /* change font in popoevers */
   color: magenta;
   font-family: OstrichSansRounded-Medium;
   font-size: 19px;
 }
-
-
-.buttons img {
-  max-width: 200px;
+.buttons img { /* makes sure my tooltip images aren't huge */
+  max-width: 333px;
 }
-
 .olfloat {
   float: left;
+  list-style: none; /* remove the numbers from the ol so I can use padding for effect. sorry :/ */
 }
-
-ol { /* remove the numbers from the ol so I can use padding for effect. sorry :/ */
-  list-style: none;
-}
-
-#listudy {
+#listudy { /* padding for a nice cascading effect */
   padding-left: 25px;
 }
-
 #ligrad {
   padding-left: 50px;
 }
-
 #liidk {
   padding-left: 75px;
   color: #7c7c7c;
 }
-
 #liprofit {
   padding-left: 100px;
 }
-
 .beautifulpuppies { /* gradient for beautiful puppies! */
   font-family: OstrichSansInline-Italic;
   font-size: 40px;
@@ -143,39 +110,31 @@ ol { /* remove the numbers from the ol so I can use padding for effect. sorry :/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-
 /* load fonts */
 @font-face {
   font-family: OstrichSans-Light;
   src: url("../fonts/OstrichSans-Light.otf");
 }
-
 @font-face {
   font-family: OstrichSans-Black;
   src: url("../fonts/OstrichSans-Black.otf");
 }
-
 @font-face {
   font-family: OstrichSansInline-Regular;
   src: url("../fonts/OstrichSansInline-Regular.otf");
 }
-
 @font-face {
   font-family: OstrichSansRounded-Medium;
   src: url("../fonts/OstrichSansRounded-Medium.otf")
 }
-
 @font-face {
   font-family: OstrichSansDashed-Medium;
   src: url("../fonts/OstrichSansDashed-Medium.otf")
 }
-
 @font-face {
   font-family: OstrichSans-Heavy;
   src: url("../fonts/OstrichSans-Heavy.otf")
 }
-
 @font-face {
   font-family: OstrichSansInline-Italic;
   src: url("../fonts/OstrichSansInline-Italic.otf");
