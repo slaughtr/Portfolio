@@ -3,7 +3,14 @@
   font-family: OstrichSansRounded-Medium;
   font-size: 30px;
   color: black;
-  background-color: #eeeeee;
+  /*background-color: #eeeeee;*/
+}
+.h3fun:hover {
+	background: black;
+	color: white;
+}
+body {
+    background: linear-gradient(#eeebeb, 	#eaf2f8)
 }
 .imgfloatleft { /* let's make that image work! */
   float: left;
@@ -50,7 +57,10 @@
 }
 #proghover:hover { /*on hover over "programming", enlarge*/
   font-size: 77px;
-  font-family: OstrichSansInline-Regular
+  font-family: OstrichSansInline-Regular;
+  background: -webkit-linear-gradient( left, #00eeff, #00ddff, #00ccff, #00bbff, #00aaff );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /* digital watches changes to frood on hover*/
 span.after-frood {
@@ -94,11 +104,13 @@ h1 {
   border-radius: 5px 20px 5px;
   background: #dddddd;
   padding-left: 8px;
+  padding-right: 75px;
 }
 .evenprojects {
   border-radius: 20px 5px 20px;
   background: #000000;
-  padding-left: 8px;
+  padding-left: 3px;
+  padding-right: 85px;
   color: #fdfdfd;
 }
 .buttons img { /* makes sure my tooltip images aren't huge */
@@ -125,6 +137,13 @@ h1 {
   font-family: OstrichSansInline-Italic;
   font-size: 40px;
   background: -webkit-linear-gradient( #ff948e, #ffcc8d, #f9ff91, #97ff9e, #abbeff );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mars { /* and now a gradient for mars */
+  font-family: OstrichSansHeavy
+  font-size: 48px;
+  background: -webkit-linear-gradient(left, #581616, #cc7810, #691a1a, #a74808, #870d0d );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
