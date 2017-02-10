@@ -40,8 +40,43 @@
       </div> <!-- END top row -->
 
       <div class="row buttons"> <!--let's hope this BEGINS our popup row #1 -->
-      <a data-toggle="tooltip" title="<img src='img/meandbuzz.jpg'/>"><a rel="popover" data-img="http://www.asdf.com/89asdf.gif">FUCK</a></a>
-      </div>
+        <div class="col-md-1"> <!-- column start -->
+          <div data-toggle="tooltip" id="myProject">Hover to see my tooltip. Click me to see my popover.</div>
+        </div> <!-- column end -->
+        <div class="col-md-1"> <!-- column start -->
+          <div data-toggle="tooltip" id="myProject2">Hover to see my tooltip. Click me to see my popover.</div>
+        </div> <!-- column end -->
+        <div class="col-md-1"> <!-- column start -->
+          <div data-toggle="tooltip" id="myProject3">Hover to see my tooltip. Click me to see my popover.</div>
+        </div> <!-- column end -->
+        <div class="col-md-1"> <!-- column start -->
+          <div data-toggle="tooltip" id="myProject4">Hover to see my tooltip. Click me to see my popover.</div>
+        </div> <!-- column end -->
+        <div class="col-md-1"> <!-- column start -->
+          <div data-toggle="tooltip" id="myProject5">Hover to see my tooltip. Click me to see my popover.</div>
+        </div> <!-- column end -->
+        <div class="col-md-1"> <!-- column start -->
+          <div data-toggle="tooltip" id="myProject6">Hover to see my tooltip. Click me to see my popover.</div>
+        </div> <!-- column end -->
+        <div class="col-md-1"> <!-- column start -->
+          <div data-toggle="tooltip" id="myProject7">Hover to see my tooltip. Click me to see my popover.</div>
+        </div> <!-- column end -->
+        <div class="col-md-1"> <!-- column start -->
+          <div data-toggle="tooltip" id="myProject8">Hover to see my tooltip. Click me to see my popover.</div>
+        </div> <!-- column end -->
+        <div class="col-md-1"> <!-- column start -->
+          <div data-toggle="tooltip" id="myProject9">Hover to see my tooltip. Click me to see my popover.</div>
+        </div> <!-- column end -->
+        <div class="col-md-1"> <!-- column start -->
+          <div data-toggle="tooltip" id="myProject10">Hover to see my tooltip. Click me to see my popover.</div>
+        </div> <!-- column end -->
+        <div class="col-md-1"> <!-- column start -->
+          <div data-toggle="tooltip" id="myProject11">Hover to see my tooltip. Click me to see my popover.</div>
+        </div> <!-- column end -->
+        <div class="col-md-1"> <!-- column start -->
+          <div data-toggle="tooltip" id="myProject12">Hover to see my tooltip. Click me to see my popover.</div>
+        </div> <!-- column end -->
+    </div> <!-- END popup row 1 -->
 
       <div class="row"> <!--let's hope this BEGINS our popup row #2 -->
 
@@ -78,20 +113,115 @@
 
     </div> <!-- END container -->
 
-    <!-- script needed for bootstrap popovers -->
+    <!-- script needed for bootstrap popovers and tooltips -->
     <script>
-      $('a[rel=popover]').popover({
-        html: true,
-        content: function(){return '<img src="'+$(this).data('img') + '" />';}
-      });
-      $('a[data-toggle="tooltip"]').tooltip({
-        animated: 'fade',
-        placement: 'right',
-        html: true,
-        container: 'body',
-        delay: { "show": 10, "hide": 600 },
+    $("#myProject").tooltip ({
+      trigger:'hover',
+    html:true,
+    title:"<img src='img/meandbuzz.jpg'/>"})
+    .popover ({trigger:'click',
+    html:true,
+    placement:'bottom',
+    content:"<a href='https://google.com'>Google</a>"});
 
-      });
+    $("#myProject2").tooltip ({
+      trigger:'hover',
+    html:true,
+    title:"<img src='img/meandbuzz.jpg'/>"})
+    .popover ({trigger:'click',
+    html:true,
+    placement:'bottom',
+    content:"<a href='https://google.com'>Google</a>"});
+
+    $("#myProject3").tooltip ({
+      trigger:'hover',
+    html:true,
+    title:"<img src='img/meandbuzz.jpg'/>"})
+    .popover ({trigger:'click',
+    html:true,
+    placement:'bottom',
+    content:"<a href='https://google.com'>Google</a>"});
+
+    $("#myProject4").tooltip ({
+      trigger:'hover',
+    html:true,
+    title:"<img src='img/meandbuzz.jpg'/>"})
+    .popover ({trigger:'click',
+    html:true,
+    placement:'bottom',
+    content:"<a href='https://google.com'>Google</a>"});
+
+    $("#myProject5").tooltip ({
+      trigger:'hover',
+    html:true,
+    title:"<img src='img/meandbuzz.jpg'/>"})
+    .popover ({trigger:'click',
+    html:true,
+    placement:'bottom',
+    content:"<a href='https://google.com'>Google</a>"});
+
+    $("#myProject6").tooltip ({
+      trigger:'hover',
+    html:true,
+    title:"<img src='img/meandbuzz.jpg'/>"})
+    .popover ({trigger:'click',
+    html:true,
+    placement:'bottom',
+    content:"<a href='https://google.com'>Google</a>"});
+
+    $("#myProject7").tooltip ({
+      trigger:'hover',
+    html:true,
+    title:"<img src='img/meandbuzz.jpg'/>"})
+    .popover ({trigger:'click',
+    html:true,
+    placement:'bottom',
+    content:"<a href='https://google.com'>Google</a>"});
+
+    $("#myProject8").tooltip ({
+      trigger:'hover',
+    html:true,
+    title:"<img src='img/meandbuzz.jpg'/>"})
+    .popover ({trigger:'click',
+    html:true,
+    placement:'bottom',
+    content:"<a href='https://google.com'>Google</a>"});
+
+    $("#myProject9").tooltip ({
+      trigger:'hover',
+    html:true,
+    title:"<img src='img/meandbuzz.jpg'/>"})
+    .popover ({trigger:'click',
+    html:true,
+    placement:'bottom',
+    content:"<a href='https://google.com'>Google</a>"});
+
+    $("#myProject10").tooltip ({
+      trigger:'hover',
+    html:true,
+    title:"<img src='img/meandbuzz.jpg'/>"})
+    .popover ({trigger:'click',
+    html:true,
+    placement:'bottom',
+    content:"<a href='https://google.com'>Google</a>"});
+
+    $("#myProject11").tooltip ({
+      trigger:'hover',
+    html:true,
+    title:"<img src='img/meandbuzz.jpg'/>"})
+    .popover ({trigger:'click',
+    html:true,
+    placement:'bottom',
+    content:"<a href='https://google.com'>Google</a>"});
+
+    $("#myProject12").tooltip ({
+      trigger:'hover',
+    html:true,
+    title:"<img src='img/meandbuzz.jpg'/>"})
+    .popover ({trigger:'click',
+    html:true,
+    placement:'bottom',
+    content:"<a href='https://google.com'>Google</a>"});
     </script>
   </body>
 </html>
