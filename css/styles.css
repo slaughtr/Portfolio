@@ -105,6 +105,9 @@ span.after-frood { /* digital watches changes to frood on hover*/
   font-weight: bold;
   background-color: #dddddd;
 }
+.tooltip-inner {
+  min-width: 349px;
+}
 .oddprojects {
   border-radius: 5px 20px 5px;
   background: #dddddd;
