@@ -1,80 +1,13 @@
 * {
-  /*border: 1px solid cyan;*/
   font-family: OstrichSansRounded-Medium;
   font-size: 30px;
   color: black;
-  /*background-color: #eeeeee;*/
 }
-.h3fun:hover {
-	background: black;
-	color: white;
-}
-body {
+body { /* I like gradients */
     background: linear-gradient(#eeebeb, 	#eaf2f8)
 }
-.imgfloatleft { /* let's make that image work! */
-  float: left;
-  width: 21vw;
-  padding-right: 29px;
-  margin-left: -15px;
-  border-radius: 11px 42px;
-}
-.h2narrower {
-  width: 300px;
-}
-.aboutme {
-  border-radius: 7px 50px 14px 25px;
-  border: 2px black solid;
-}
-/* font size changes with viewport! */
-.dynfontsize1 p, li, a {
-  font-size: 2vmin;
-}
-.dynfontsize2 p, li {
-  font-size: 2.5vmin;
-}
-.dynfontsizeb-1 p, li {
-  font-size: 4vmin;
-}
-.dynfontsizeb-2 p, li {
-  font-size: 1.5vmin;
-}
-.dynfontsizeb-3 p, li {
-  font-size: 2vmin;
-}
-.align {
-  font-size: 2vmin;
-}
-/* offset bottom row */
-#leftcoloffset {
-  margin-top: 10px;
-}
-#middlecoloffset {
-  margin-top: 50px;
-}
-#rightcoloffset {
-  margin-top: 100px;
-}
-#proghover:hover { /*on hover over "programming", enlarge*/
-  font-size: 77px;
-  font-family: OstrichSansInline-Regular;
-  background: -webkit-linear-gradient( left, #00eeff, #00ddff, #00ccff, #00bbff, #00aaff );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-/* digital watches changes to frood on hover*/
-span.after-frood {
-  display: none;
-}
-.hoopy:hover span.align {
-  display: none;
-}
-.hoopy:hover span.after-frood {
-  display: block;
-}
-/* h1 w/ diff fonts for name */
 h1 {
-  text-align: justify;
+  text-align: center;
 }
 #name1 {
   font-family: OstrichSans-Heavy;
@@ -92,29 +25,57 @@ h1 {
  font-family: OstrichSansInline-Italic;
  font-size: 48px;
 }
-.popover { /* allow popovers to be wider than their source button */
-  max-width: 100%;
+.imgfloatleft { /* let's make that image work! */
+  float: left;
+  max-width: 21vw;
+  padding-right: 29px;
+  margin-left: -15px;
+  border-radius: 11px 42px;
+  max-height: 40%;
 }
-.popover-title, .popover-content { /* change font in popoevers */
-  color: magenta;
-  font-family: OstrichSansRounded-Medium;
-  font-size: 19px;
+.h2narrower { /* necessary for the border around aboutme to not be broken... */
+  width: 300px;
 }
-.oddprojects {
-  border-radius: 5px 20px 5px;
-  background: #dddddd;
-  padding-left: 8px;
-  padding-right: 75px;
-}
-.evenprojects {
+.aboutme {
   border-radius: 20px 5px 20px;
-  background: #000000;
-  padding-left: 3px;
-  padding-right: 85px;
-  color: #fdfdfd;
+  border: 2px black solid;
+  background-color: #fdfdfd;
 }
-.buttons img { /* makes sure my tooltip images aren't huge */
-  max-width: 333px;
+.dynfontsize1 p, li, a { /* font size changes with viewport! */
+  font-size: 2vmin;
+}
+.dynfontsize2 p, li {
+  font-size: 2.5vmin;
+}
+.dynfontsizeb-1 p, li {
+  font-size: 4vmin;
+}
+.dynfontsizeb-2 p, li {
+  font-size: 1.5vmin;
+}
+.dynfontsizeb-3 p, li {
+  font-size: 2vmin;
+}
+.align {
+  font-size: 2vmin;
+}
+span.after-frood { /* digital watches changes to frood on hover*/
+
+  display: none;
+}
+.hoopy:hover span.align {
+  display: none;
+}
+.hoopy:hover span.after-frood {
+  display: block;
+  color: #eeebeb;
+}
+#proghover:hover { /*on hover over "programming", enlarge and MORE GRADIENT*/
+  font-size: 77px;
+  font-family: OstrichSansInline-Regular;
+  background: -webkit-linear-gradient( left, #00eeff, #00ddff, #00ccff, #00bbff, #00aaff );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .olfloat {
   float: left;
@@ -133,6 +94,46 @@ h1 {
 #liprofit {
   padding-left: 100px;
 }
+.popover { /* allow popovers to be wider than their source button */
+  max-width: 100%;
+  background-color: #dddddd;
+}
+.popover-title, .popover-content { /* change font in popoevers */
+  color: black;
+  font-family: OstrichSansRounded-Medium;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #dddddd;
+}
+.oddprojects {
+  border-radius: 5px 20px 5px;
+  background: #dddddd;
+  padding-left: 8px;
+  padding-right: 75px;
+}
+.evenprojects {
+  border-radius: 20px 5px 20px;
+  background: #000000;
+  padding-left: 3px;
+  padding-right: 85px;
+  color: #fdfdfd;
+}
+.buttons img { /* makes sure my tooltip images aren't huge */
+  max-width: 333px;
+}
+.h3fun:hover { /* a little more dynamic */
+	background: black;
+	color: white;
+}
+#leftcoloffset { /* offset bottom row */
+  margin-top: 10px;
+}
+#middlecoloffset {
+  margin-top: 50px;
+}
+#rightcoloffset {
+  margin-top: 100px;
+}
 .beautifulpuppies { /* gradient for beautiful puppies! */
   font-family: OstrichSansInline-Italic;
   font-size: 40px;
@@ -147,7 +148,7 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/* load fonts */
+/* load fonts below */
 @font-face {
   font-family: OstrichSans-Light;
   src: url("../fonts/OstrichSans-Light.otf");
